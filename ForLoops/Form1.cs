@@ -23,29 +23,39 @@ namespace ForLoops
 
             for (int i = 1; i <= 5; i++)
             {
-                
+                q1Output.Text += $"{i}";
             }
         }
 
         private void q2Button_Click(object sender, EventArgs e)
         {
             //2.  Create a loop that displays all values inclusive between 10-6.
-
+            for (int i=10;i>=6;i--)
+            {
+                q2Output.Text = $"{i}";
+            }
 
         }
 
         private void q3Button_Click(object sender, EventArgs e)
         {
             //3.  Create a loop that displays even numbers inclusive between 2 and 10
-
-
+            for (int i =2;i<=10;i=i+2)
+            {
+                q3Output.Text = $"{i}";
+            }
         }
 
         private void q4Button_Click(object sender, EventArgs e)
         {
             //4.  Create a loop that displays the sum of all numbers inclusive 
             //    between 1 and 10. The answers should be 55.
-
+            int sum = 0;
+            for (int i =1; i <=55; i = i + 1)
+            {
+               sum=i+0 ;
+                q4Output.Text = $"{sum}";
+            }
 
         }
 
@@ -72,6 +82,11 @@ namespace ForLoops
             //   Hint: Start off with a string that has 1 "*" in it, then 
             //   in the loop you will add another "*"
 
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }
